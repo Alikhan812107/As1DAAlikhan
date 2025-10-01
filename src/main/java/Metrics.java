@@ -1,4 +1,5 @@
 public class Metrics {
+
     public long comps, swaps, writes, allocs;
     public int maxDepth, curDepth;
 
@@ -10,4 +11,5 @@ public class Metrics {
 
     public void enter() { if (++curDepth > maxDepth) maxDepth = curDepth; }
     public void exit() { curDepth--; }
+
 }
