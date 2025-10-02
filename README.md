@@ -93,10 +93,10 @@ For each algorithm and size ( n ):
 
 | Algorithm                       |             Time (avg) |           Time (worst) |                     Space (extra) | Stable | Notes                               |
 | ------------------------------- | ---------------------: | ---------------------: | --------------------------------: | ------ | ----------------------------------- |
-| MergeSort                       |      (\Theta(n\log n)) |      (\Theta(n\log n)) |                       (\Theta(n)) | Yes    | Single reusable buffer, high writes |
-| QuickSort (rand, smaller-first) |      (\Theta(n\log n)) |          (\Theta(n^2)) |  (\Theta(\log n)) stack (typical) | No     | Depth bounded in practice           |
-| Select (MoM5)                   |       (\mathcal{O}(n)) |       (\mathcal{O}(n)) | (\mathcal{O}(1)) extra (in-place) | N/A    | Deterministic pivot quality         |
-| Closest Pair (2D)               | (\mathcal{O}(n\log n)) | (\mathcal{O}(n\log n)) | (\mathcal{O}(n)) for sorted views | N/A    | Strip check constant bound          |
+| MergeSort                       |      (Theta(n\log n)) |      (Theta(n\log n)) |                       (Theta(n)) | Yes    | Single reusable buffer, high writes |
+| QuickSort (rand, smaller-first) |      (Theta(n\log n)) |          (Theta(n^2)) |  (\Theta(\log n)) stack (typical) | No     | Depth bounded in practice           |
+| Select (MoM5)                   |       ((n)) |       ((n)) | ((1)) extra (in-place) | N/A    | Deterministic pivot quality         |
+| Closest Pair (2D)               | (\(n\log n)) | ((n\log n)) | ((n)) for sorted views | N/A    | Strip check constant bound          |
 
  8) Threats to Validity
 
