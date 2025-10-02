@@ -14,5 +14,6 @@ public class MoM5Test {
         Metrics m = new Metrics();
         int v = MoM5.select(a, k, m);
         assertEquals(gold[k], v);
+
     }
 }
